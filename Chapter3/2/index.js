@@ -5,6 +5,7 @@ const app = express();
 app.set('views', `${__dirname}/views`);
 app.set('view engine', 'pug');
 
+
 app.get('/', (req, res) => res.render("index.pug"));
 app.get('/page', (req, res) => {
     const {page, author} = req.query; //query에서 변수 할당
